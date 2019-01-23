@@ -106,7 +106,8 @@ function automatedText(selector, timeBetweenText, exclude, timeBeforeStart, brea
       }
 
       function typeChar() {
-        var rand = (!fast_forward ? Math.round(Math.random() * 60) + 25 : 0);
+        // var rand = (!fast_forward ? Math.round(Math.random() * 60) + 25 : 0);
+        var rand = (!fast_forward ? Math.round(Math.random() * 60) + 28 : 0);
 
         setTimeout(function () {
           var char = content[charIdx++],
