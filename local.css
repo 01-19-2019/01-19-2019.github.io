@@ -1,1 +1,61 @@
+::-webkit-scrollbar {
+  display: none;
+}
 
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+ 
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: inherit;
+  height: inherit;
+  background: #111111;
+  font-family: Courier, Arial;
+  padding: 5%;
+  margin: 0px;
+}
+
+.scroll-container {
+  width: inherit;
+}
+
+p {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: left;
+  color: #F2F1EF;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  display: block;
+  font-size: 20px;
+  letter-spacing: 0.3px;
+}
+
+
+
+/* AUTOMATED TEXT */
+.unread {
+  visibility: hidden;
+  display: none;
+}
+
+.reading {
+  visibility: visible;
+  display: block;
+}
+
+.reading::after {
+  content: "|";
+}
+
+.read {
+  visibility: visible;
+  display: block;
+}
